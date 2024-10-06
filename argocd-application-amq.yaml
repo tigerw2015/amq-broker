@@ -8,8 +8,8 @@ spec:
     server: https://kubernetes.default.svc
     namespace: amq-broker-operator
   source:
-    repoURL: https://github.com/tigerw2015/rtf-operator.git
-    path: base
+    repoURL: https://github.com/tigerw2015/amq-broker.git
+    path: operator/base
     targetRevision: HEAD
   sources: []
   project: default
