@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: amq-broker-operator
+  namespace: argocd
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: amq-broker-operator
+  source:
+    repoURL: https://github.com/tigerw2015/rtf-operator.git
+    path: base
+    targetRevision: HEAD
+  sources: []
+  project: default
