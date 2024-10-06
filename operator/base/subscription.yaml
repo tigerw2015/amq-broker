@@ -5,7 +5,7 @@ metadata:
   namespace: amq-broker-operator
 spec:
   channel: 7.12.x
-  installPlanApproval: Automatic
+  installPlanApproval: Manual
   name: amq-broker-rhel8
   source: redhat-operators
   sourceNamespace: openshift-marketplace
